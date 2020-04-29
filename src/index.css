@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'nes';
+    src: url('./assets/fonts/nes.ttf');
+}
+
+*{
+    font-family: 'nes';
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+nav {
+    margin: 3vh 0 3vh 0;
+}
+
+html {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#titre {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+
+#main {
+    height: 15em;
+}
+
+#entry {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 30vw;
+    height: 10em;
+}
+
+.nes-container button {
+    margin-top: 3vw;
+}
+
+.nes-container {
+    margin: 3vh 0 3vh 0;
+}
