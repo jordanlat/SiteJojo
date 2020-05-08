@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'nes';
+    src: url(2ebf1a35a67b4271603e509fccad3d4d.ttf);
+}
+
+* {
+    font-family: 'nes';
+}
+
+.guess-content {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#text p {
+    text-align: center;
+}
+
+.center {
+    margin: 1rem 10rem 1rem 10rem;
+}
+
+.indice {
+    font-size: 2rem;
+}
+
+.fix-center {
+    padding-left: 0px;
+}
+
+
+
+/*  Pour cacher les flèches dans l'input  */
+/* Chrome, Safari, Edge, Opera */
+/*
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*/
+/* Firefox */
+/*
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*/
