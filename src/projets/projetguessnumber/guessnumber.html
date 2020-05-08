@@ -1,0 +1,52 @@
+<nav>
+  <a class="nes-btn" href="index.html">RETOUR</a>
+</nav>
+
+<div class="guess-content">
+  <div class="container">
+    <div class="nes-container is-dark with-title" id="titre">
+      <h1>Devine le chiffre</h1>
+    </div>
+  </div>
+  <br />
+  <div class="container-text">
+    <div class="nes-container" id="text">
+      <p>C'est un chiffre entier entre 0 et 10</p>
+    </div>
+  </div>
+
+  <div class="container submit">
+    <div class="box-input">
+      <input type="number" name="" id="valueTag" class="nes-container indice center" value="0" min="0" max="9"
+        autofocus>
+    </div>
+
+    <section>
+      <button type="button" id="btSubmit" class="nes-btn is-primary"> 
+        VALIDE
+      </button>
+
+      <dialog class="nes-dialog" id="dialog-vrai">
+        <form method="dialog">
+          <p class="title">REPONSE</p>
+          <p>CORRECT !! :D</p>
+          <p>Tu as gagné un cookie !</p>
+          <menu class="dialog-menu fix-center">
+            <button id="btConfirmTrue" class="nes-btn is-primary">Confirm</button>
+          </menu>
+        </form>
+      </dialog>
+
+      <dialog class="nes-dialog" id="dialog-faux">
+        <form method="dialog">
+          <p class="title">REPONSE</p>
+          <p>FAUX</p>
+          <menu class="dialog-menu fix-center">
+            <button id="btConfirmFalse" class="nes-btn is-primary">Confirm</button>
+          </menu>
+        </form>
+      </dialog>
+
+    </section>
+    <br />
+  </div>

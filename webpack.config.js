@@ -9,6 +9,12 @@ module.exports = {
     teamderjs: './src/projets/projetTeamder/assets/teamder.js',
     teamdercss: './src/projets/projetTeamder/assets/teamder.css',
     teamderpic: './src/projets/projetTeamder/assets/image1.jpeg',
+    soonCss: './src/assets/comingSoon/comingSoon.css',
+    soonJs: './src/assets/comingSoon/comingSoon.js',
+    guessnbrjs: './src/projets/projetguessnumber/guessnumber.js',
+    guessnbrcss: './src/projets/projetguessnumber/guessnumber.css',
+    guessnbrpicleft: './src/projets/projetguessnumber/img/left.png',
+    guessnbrpicright: './src/projets/projetguessnumber/img/right.png',
   },
   output: {
     filename: '[name].[contentHash].js',
@@ -28,7 +34,7 @@ module.exports = {
         ],
       },
         {
-            test: /\.(eot|woff|woff2|svg|ttf|jpe?g)([\?]?.*)$/,
+            test: /\.(png|eot|woff|woff2|svg|ttf|jpe?g)([\?]?.*)$/,
             use: ['file-loader']
         }
     ],
@@ -46,6 +52,18 @@ module.exports = {
       inject: true,
       filename: 'teamder.html',
       chunks: ['teamdercss','teamderjs','teamderpic'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/assets/comingSoon/comingSoon.html',
+      inject: true,
+      filename: 'comingSoon.html',
+      chunks: ['soonCss','soonJs'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/projets/projetguessnumber/guessnumber.html',
+      inject: true,
+      filename: 'guessnumber.html',
+      chunks: ['guessnbrjs','guessnbrcss','guessnbrpicleft','guessnbrpicright'],
     }),
     new MiniCssExtractPlugin()
   ],
