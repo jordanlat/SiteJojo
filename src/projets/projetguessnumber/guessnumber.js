@@ -16,6 +16,7 @@ onSubmit.addEventListener('click', ()=> {
         document.getElementById('dialog-vrai').showModal();
         console.log('GG');
     } else if ( getValue != iaNbr ) {
+        document.getElementById('wrong').innerText = "FAUX! C'était " + iaNbr;
         document.getElementById('dialog-faux').showModal();
     }
 });
