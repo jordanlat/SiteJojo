@@ -3,16 +3,45 @@
     src: url(2ebf1a35a67b4271603e509fccad3d4d.ttf);
 }
 
-*{
-    font-family: 'nes';
+@font-face {
+    font-family: 'roboto';
+    src: url(03523cf578d69fa923226ff457b92d90.ttf);
 }
 
-.titre {
+@font-face {
+    font-family: 'noto';
+    src: url(fa11626fafb16c629d2c58b0ff6fbd38.ttf);
+}
+
+@font-face {
+    font-family: 'robot-bold';
+    src: url(4f39c5796e60c9d8e7327a00e9a4442e.ttf);
+}
+
+*{
+    font-family: 'noto';
+}
+
+.titre h1{
+    font-family: 'roboto-bold';
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
+
+.titre {
+    margin-top: 2vh;
+}
+
+.titre hr {
+    width: 50%;
+}
+
+.titre-content {
+    font-family: 'roboto-bold';
+}
+
 nav {
     margin: 3vh 0 3vh 0;
 }
@@ -39,19 +68,24 @@ html {
     padding: 1vh 30vw;
     height: 10em;
 }
-
-.nes-container button {
-    margin-top: 3vw;
-}
-
-.nes-container {
-    margin: 3vh 0 3vh 0;
+content p {
+    font-family: 'noto';
 }
 
 .btn_projet a {
-
     margin: 1vh;
+}
 
+
+.border {
+    border: solid 3px;
+    border-radius: 10px;
+    padding: 3vh;
+    margin-bottom: 1vh;
+}
+
+.shadow {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.40);
 }
 /*!***************************************************************************\
   NES.css Framework

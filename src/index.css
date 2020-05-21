@@ -3,16 +3,45 @@
     src: url('./assets/fonts/nes.ttf');
 }
 
-*{
-    font-family: 'nes';
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
 }
 
-.titre {
+@font-face {
+    font-family: 'noto';
+    src: url('./assets/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'robot-bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+
+*{
+    font-family: 'noto';
+}
+
+.titre h1{
+    font-family: 'roboto-bold';
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
+
+.titre {
+    margin-top: 2vh;
+}
+
+.titre hr {
+    width: 50%;
+}
+
+.titre-content {
+    font-family: 'roboto-bold';
+}
+
 nav {
     margin: 3vh 0 3vh 0;
 }
@@ -39,17 +68,22 @@ html {
     padding: 1vh 30vw;
     height: 10em;
 }
-
-.nes-container button {
-    margin-top: 3vw;
-}
-
-.nes-container {
-    margin: 3vh 0 3vh 0;
+content p {
+    font-family: 'noto';
 }
 
 .btn_projet a {
-
     margin: 1vh;
+}
 
+
+.border {
+    border: solid 3px;
+    border-radius: 10px;
+    padding: 3vh;
+    margin-bottom: 1vh;
+}
+
+.shadow {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.40);
 }

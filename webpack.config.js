@@ -15,6 +15,8 @@ module.exports = {
     guessnbrcss: './src/projets/projetguessnumber/guessnumber.css',
     guessnbrpicleft: './src/projets/projetguessnumber/img/left.png',
     guessnbrpicright: './src/projets/projetguessnumber/img/right.png',
+    teamderPreview: './src/assets/img/teamder.png',
+    numberPreview: './src/assets/img/number.png',
   },
   output: {
     filename: '[name].[contentHash].js',
@@ -45,7 +47,7 @@ module.exports = {
       template: './src/index.html',
       inject: true,
       filename: 'index.html',
-      chunks: ['index'],
+      chunks: ['index','teamderPreview','numberPreview'],
     }),
     new HtmlWebpackPlugin({
       template: './src/projets/projetTeamder/teamder.html',
