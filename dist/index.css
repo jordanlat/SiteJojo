@@ -87,6 +87,37 @@ content p {
 .shadow {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.40);
 }
+
+.picSize {
+    width: 35vw;
+    height: auto;
+}
+
+.case {
+    display: flex;
+    flex-direction: row;
+}
+.case img {
+    padding: 0 2vw 0 2vw;
+}
+
+.reverseCase {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.reverseCase  img{
+    padding: 0 2vw 0 2vw;
+}
+
+.art_txt_right {
+    border-left: solid 1px;
+    padding-left: 2vw;
+}
+
+.art_txt_left {
+    border-right: solid 1px;
+    padding-left: 2vw;
+}
 /*!***************************************************************************\
   NES.css Framework
   Version: 2.3.0

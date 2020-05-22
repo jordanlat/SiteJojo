@@ -3,8 +3,11 @@ import moment from 'moment'
 
 import css from "./index.css"
 import "nes.css/css/nes.css";
+import numberPrev from "./assets/img/number.png";
+import teamderPrev from "./assets/img/teamder.png";
 
-
+document.getElementById('teamderPrev').src = teamderPrev;
+document.getElementById('numberPrev').src = numberPrev;
 
 var showText = function (target, message, index, interval) {   
     
