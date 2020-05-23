@@ -93,6 +93,7 @@ content p {
     height: auto;
 }
 
+/*
 .case {
     display: flex;
     flex-direction: row;
@@ -116,5 +117,24 @@ content p {
 
 .art_txt_left {
     border-right: solid 1px;
-    padding-left: 2vw;
+    padding-right: 4vw;
+}
+*/
+.art_cont {
+    margin: 0 2vw;
+}
+.art_img img {
+    position: static;
+    top: 50%;
+}
+.case {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reverseCase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
